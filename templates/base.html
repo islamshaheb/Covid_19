@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <!--=========================DashBoard=================-->
+
+  <title>{% block title_block %} Blogs {% endblock %}</title>
+
+  <!--=========================== first index============================-->
+
+  <!-- ======================== first index=================== -->
+  <!--=====Dash====-->
+
+<style>
+  .display-8 {
+    font-weight: 300;
+    font-size: 35px;
+  }
+
+  .display-7 {
+    font-weight: 600;
+    font-size: 60px;
+  }
+
+  .color1 {
+    background-color: #7175B6;
+    color: white;
+  }
+
+  .color2 {
+    background-color: #FF3E4D;
+    color: white;
+  }
+
+  .color3 {
+    background-color: #FD0101;
+    color: white;
+  }
+
+  .color4 {
+    background-color: #2ecc72;
+    color: white;
+  }
+
+  .color5 {
+    background-color: #31E522;
+    color: white;
+  }
+
+  .number {
+    font-weight: 300;
+    font-size: 40px;
+    float: right;
+  }
+</style>
+
+  <!--===Dash===-->
+
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-blue">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{%url 'Index' %}"><b><img src="/media/cvd.png" class="rounded-circle" width="50px"></b></a>
+
+        <!--main url er vitor index name ta ase tai index er age kisu dite hbe na-->
+        Mujahid Jui Sajib Mridula Zahid
+      </li>
+
+      {%if user.is_authenticated %}
+      <div class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          {{user.username}}
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{%url 'App_Covid:create_blog' %}"><b>Share Your Thoughts</b></a>
+          <a class="dropdown-item" href="{%url 'App_Covid:my_blogs' %}"><b>My Blogs</a>
+          <a class="dropdown-item" href="{%url 'App_Login:user_profile' %}"><b>My Profile</b></a>
+          <hr>
+          <a class="dropdown-item" href="{% url 'App_Login:logout' %}">Logout</a>
+
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'Dashboard:show_dash' %}"><b>Bangladesh Info</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'Map_Data:show_map' %}"><b>Map_Visualization</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'More_Info:show_more' %}"><b>More_Info</b></a>
+        </li>
+      </div>
+
+
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'App_Login:signup' %}"><b>SignUp</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'App_Login:login' %}"><b>LogIn</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'admin:index' %}"><b>Admin</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'Dashboard:show_dash' %}"><b>Bangladesh Info</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'Map_Data:show_map' %}"><b>Map_Visualization</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'More_Info:show_more' %}"><b>More Info</b></a>
+      </li>
+
+      {% endif %}
+    </ul>
+
+  </nav>
+  <div class="container" style="padding-top:20px">
+    {% block body_block %}
+    {% endblock %}
+    <!-- First Index -->
+
+    <!-- First Index -->
+  </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+<head>
+    <title>welcome to this world</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+{% block body_block %}
+<body>
+    <div class="jumbotron">
+        <center><h1>More Information About Covid-19 in Bangladesh</h1>
+           <a href="/more/show_more/" class="btn btn-danger">Refresh News</a>
+        </form>
+    </center>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                    <h2 class="text-centre" style="color:rgb(0, 204, 102);">প্রথম আলো</h2>
+                    {% for n in toi_news %}
+                    <h7> -  {{n}} </h7>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+            <div class="col-3">
+                    <h2 class="text-centre" style="color:Tomato;">বাংলা ২৪ লাইভ নিউজপেপার</h2>
+                    {% for htn in ht_news %}
+                    <h7> - {{htn}} </h7>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+            <div class="col-3">
+                    <h2 class="text-centre" style="color: rgb(0, 0, 255);">ডেইলি ইত্তেফাক</h2>
+                    {% for htn in third_news %}
+                    <h7> - {{htn}} </h7>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+            <div class="col-3">
+                    <b><h2 class="text-centre" style="color: rgb(0, 102, 153);">যুগান্তর</h2></b>
+                    {% for htn in fourth_news %}
+                    <h7> - {{htn}} </h7>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+        </div>
+
+
+</div>
+    <script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock %}

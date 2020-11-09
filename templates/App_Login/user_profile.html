@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{%block body_block%}
+<h2>Your Profile: </h2>
+
+
+<!--<table border="4">
+  <tr>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Name</th>
+  </tr>
+
+  <tr>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.first_name}} {{user.last_name}}</td>
+  </tr>
+</table>-->
+{% if user.user_profile %}
+<img src="/media/{{user.user_profile.profile_pic}}" class="rounded-circle" width="100px">
+<a href="{% url 'App_Login:change_pro_pic' %}" class="btn btn-info btn-sm">Change Profile Picture</a>
+{% else %}
+
+<img src="/media/profile_pics/general.png" class="rounded-circle" width="100px">
+<a href="{% url 'App_Login:add_pro_pic' %}" class="btn btn-info btn-sm">Change Profile Picture</a>
+{% endif %}
+<br>
+<br>
+<b>Username: </b><p>{{user.username}}</p>
+<b>Email: </b><p>{{user.email}}</p>
+<b>Name: </b><p>{{user.first_name}} {{user.last_name}}</p>
+<br>
+<a href="{%url 'App_Login:user_change'%}" class="btn btn-warning btn-sm">Change Profile Info</a>
+
+{% endblock %}
