@@ -43,7 +43,7 @@ Now See the UI features.
 ![a](https://user-images.githubusercontent.com/33740662/107370820-ad3af080-6b0d-11eb-8b13-27309a0594c3.png)
 ![Screenshot (189)](https://user-images.githubusercontent.com/33740662/107370832-b1ffa480-6b0d-11eb-9f0d-ceb7d46899fe.png)
 
-## all information of covid 19 afected person last date. Here we have got all information about individual district in Bangladesh.
+## All information of covid 19 affected person of last day. Here we have got all information about individual district in Bangladesh.
 ![(4)](https://user-images.githubusercontent.com/33740662/107371001-ebd0ab00-6b0d-11eb-8a85-15f40a6cfe8d.jpg)
 
 ## All news on a single page from top most newspaper of Bangladesh .
