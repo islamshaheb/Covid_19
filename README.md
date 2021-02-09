@@ -43,7 +43,7 @@ Now See the UI .
 ## After Log In one can share their thought
 ![Screenshot (190)](https://user-images.githubusercontent.com/33740662/107370641-71a02680-6b0d-11eb-9409-3b442a8b1ac8.png)
 
-## After login one can comments and like those post and able see the all stat of those projects.
+## After login one can comments and like those post and able see the all stat.(Number of like/comments) of those posts.
 ![a](https://user-images.githubusercontent.com/33740662/107370820-ad3af080-6b0d-11eb-8b13-27309a0594c3.png)
 ![Screenshot (189)](https://user-images.githubusercontent.com/33740662/107370832-b1ffa480-6b0d-11eb-9f0d-ceb7d46899fe.png)
 
