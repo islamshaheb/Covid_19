@@ -1,12 +1,16 @@
 # Covid_19
 A project to show Covid-19 affected people in the world. Here we have some specific features to show data of Covid-19 affected person in Bangladesh district wise and someone can post comment and one can reply and edit that thing.
 
-Now dowload full repo your loacal machine and run those cammands.
-For installing Djano use `pip install django` command.
-For running this project in your local machine you need to instaal python and django properly.
-Beside thiose things additional libraries have to install.
-For instaaling those package/library use pycharm.
-In order not to user pycham you can use terminal/Command prompt. Open terminal in the `manage.py` directory and run those commands.
+Now download full repo in your local machine and run those cammands.
+For installing Django use 
+
+`pip install django`
+
+command.
+For running this project in your local machine you need to install python and django properly.
+Beside those things additional libraries have to install.
+For installing those package/library use pycharm.
+In order not to user pycharm you can use terminal/Command prompt. Open terminal in the `manage.py` directory and run those commands.
 
 `pip install django_cleanup`
 
@@ -14,19 +18,19 @@ In order not to user pycham you can use terminal/Command prompt. Open terminal i
 
 `pip install numpy`
 
-`pip intall  bs4`
+`pip intall bs4`
 
-Now for seting up database model use those command
+Now for setting up database model use those command
 
 `python manage.py makemigrations`
 
 `python manage.py migrate`
 
-Inorder to run this project use `python mangage.py runserver` command.
+In order to run this project use `python mangage.py runserver` command.
 Now project is running in your local machine. Use address in terminal for opening this project in your browser.
 [Addressh should be ` http://127.0.0.1:8000/`].
 
-Now See the UI features.
+Now See the UI .
 ## Home page :
 ![(1)](https://user-images.githubusercontent.com/33740662/107370298-fcccec80-6b0c-11eb-946c-122e038b0db2.jpg)
 
