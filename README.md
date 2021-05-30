@@ -1,7 +1,9 @@
 # Covid_19
-A project to show Covid-19 affected people in the world. Here we have some specific features to show data of Covid-19 affected person in Bangladesh district wise and someone can post comment and one can reply and edit that thing.
+A project to show Covid-19 affected people in the world. Here we have some specific features to show data of Covid-19 infected person in Bangladesh district wise and someone can post their thought and able to do comment and edit their shared post. Someone can comment/like/share those posts if they have accounts and logged in.
+We collect all the news related to Covid-19 from the different popular online newspapers in Bangladesh and shown them on a single page. For that reason, No one needs to go to every newspaper's site to read Covid-19 related news. Just go to our website and read all articles on a single page.
 
-Now download full repo in your local machine and run those cammands.
+If you want to run this project in your local machine download full repo in your local machine and run those cammands.
+
 For installing Django use 
 
 `pip install django`
@@ -18,7 +20,7 @@ In order not to user pycharm you can use terminal/Command prompt. Open terminal 
 
 `pip install numpy`
 
-`pip intall bs4`
+`pip install bs4`
 
 Now for setting up database model use those command
 
@@ -30,7 +32,7 @@ In order to run this project use `python mangage.py runserver` command.
 Now project is running in your local machine. Use address in terminal for opening this project in your browser.
 [Addressh should be ` http://127.0.0.1:8000/`].
 
-Now See the UI .
+Now Let's see the UI .
 ## Home page :
 ![(1)](https://user-images.githubusercontent.com/33740662/107370298-fcccec80-6b0c-11eb-946c-122e038b0db2.jpg)
 
